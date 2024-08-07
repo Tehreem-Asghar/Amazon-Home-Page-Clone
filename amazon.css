@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 .nav-logo {
@@ -132,6 +133,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 .panel-ops p {
@@ -289,4 +291,53 @@ ul a {
 
 .copyright {
   padding: 5px;
+}
+
+
+@media (max-width: 480px) {
+  .nav-logo {
+    width: 80px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .nav-address,
+  .nav-singin,
+  .nav-return,
+  .nav-cart {
+    height: auto;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .nav-search {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .search-select,
+  .search-input,
+  .search-icon {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .box-content {
+    text-align: center;
+  }
+
+  .long-box {
+    height: auto;
+  }
+
+  .imges {
+    flex-direction: column;
+  }
+
+  .book {
+    width: 80%;
+    height: auto;
+  }
 }
